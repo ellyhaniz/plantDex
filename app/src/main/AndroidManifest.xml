@@ -33,6 +33,7 @@
         <!-- Shared account -->
         <activity android:name=".common.boundary.MyAccountActivity" android:screenOrientation="portrait" />
         <activity android:name=".common.boundary.EditMyAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".common.boundary.AuditLogActivity" android:screenOrientation="portrait" />
 
         <!-- Placeholder dashboards -- real ones arrive in later branches/sessions -->
         <activity android:name=".visitor.VisitorDashboardActivity" android:screenOrientation="portrait" />
