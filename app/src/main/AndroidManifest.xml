@@ -26,6 +26,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".common.boundary.RegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
         <activity android:name=".common.RoleSplashActivity" android:screenOrientation="portrait" />
 
         <!-- Shared account -->
