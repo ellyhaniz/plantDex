@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.PlantDex">
+
+        <activity android:name=".common.RoleSplashActivity" android:screenOrientation="portrait" />
+
+        <!-- Shared account -->
+        <activity android:name=".common.boundary.MyAccountActivity" android:screenOrientation="portrait" />
+        <activity android:name=".common.boundary.EditMyAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+
+        <!-- Placeholder dashboards -- real ones arrive in later branches/sessions -->
+        <activity android:name=".visitor.VisitorDashboardActivity" android:screenOrientation="portrait" />
+        <activity android:name=".researcher.ResearcherDashboardActivity" android:screenOrientation="portrait" />
+        <activity android:name=".systemadmin.SystemAdminDashboardActivity" android:screenOrientation="portrait" />
+        <activity android:name=".useradmin.boundary.UserAdminDashboardActivity" android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
