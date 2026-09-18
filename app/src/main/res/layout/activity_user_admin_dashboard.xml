@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/plantdex_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <include layout="@layout/header_role" android:id="@+id/header" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="PlantDex"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <include layout="@layout/tile_dashboard_action" android:id="@+id/tileProfileType" />
+                <include layout="@layout/tile_dashboard_action" android:id="@+id/tileUserAccount" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="User Activity" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View All" android:textColor="@color/white" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_card"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="26dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="top|end" android:text="30" android:textColor="@color/plantdex_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="top|end" android:text="20" android:textColor="@color/plantdex_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="top|end" android:text="10" android:textColor="@color/plantdex_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="bottom|end" android:text="0" android:textColor="@color/plantdex_text_muted" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/barsContainer"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="bottom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+                        <View android:layout_width="26dp" android:layout_height="1dp" />
+                        <LinearLayout
+                            android:id="@+id/dayLabelsContainer"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="Audit Log" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tvViewMoreAudit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View More" android:textColor="@color/white" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <include layout="@layout/tile_audit_entry" android:id="@+id/latestAuditEntry" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/navContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
