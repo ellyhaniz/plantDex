@@ -40,6 +40,8 @@
         <activity android:name=".researcher.ResearcherDashboardActivity" android:screenOrientation="portrait" />
         <activity android:name=".systemadmin.SystemAdminDashboardActivity" android:screenOrientation="portrait" />
         <activity android:name=".useradmin.boundary.UserAdminDashboardActivity" android:screenOrientation="portrait" />
+        <activity android:name=".useradmin.boundary.profiletype.ProfileTypeManagementActivity" android:screenOrientation="portrait" />
+        <activity android:name=".useradmin.boundary.profiletype.EditProfileTypeActivity" android:screenOrientation="portrait" />
     </application>
 
 </manifest>
